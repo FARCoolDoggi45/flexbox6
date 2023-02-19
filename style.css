@@ -1,0 +1,55 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: lightgray;
+}
+
+.pallete {
+	display: flex;
+
+	overflow: hidden; /* скрывает всё, что находится за гранью элемента */
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+
+}
+
+.color {
+	transform: scale(1.1);
+	transition-duration: 300ms;
+	flex-grow: 1; /* растягивает все элементы */
+	width: 10px;
+}
+
+.color:hover {
+	width: 80px;
+}
+
+.color:nth-child(1) {
+	background-color: #ffffff;
+}
+
+.color:nth-child(2) {
+	background-color: #0077b6;
+}
+
+.color:nth-child(3) {
+	background-color: #d62828;
+}
+
+.color:nth-child(4) {
+	background-color: #000000;
+}
+
+.color:nth-child(5) {
+	background-color: #ffc300;
+}
+
+.color:nth-child(6) {
+	background-color: #ffffff;
+}
+
+/* до работать */
